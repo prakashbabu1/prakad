@@ -14,7 +14,7 @@ pipeline {
 		}
 		stage('deploy'){
 			steps{
-				sh 'sudo cp /home/ec2-user/.jenkins/war/WEB-INF/lib/*.jar /opt/'	
+				sh 'sudo cp /root/.jenkins/workspace/pipeline_l/lib/*.jar /opt/'	
 				}
 			}
 	}
