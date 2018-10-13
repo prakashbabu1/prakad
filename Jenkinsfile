@@ -14,7 +14,7 @@ pipeline {
 		}
 		stage('deploy'){
 			steps{
-				sh 'sudo cp /home/ec2-user/.jenkins/war/WEB-INF/lib/*.jar /mnt/'	
+				sh 'sudo cp /home/ec2-user/.jenkins/war/WEB-INF/lib/*.jar /opt/apache-tomcat-7.0.85/webapps/'	
 				}
 			}
 	}
